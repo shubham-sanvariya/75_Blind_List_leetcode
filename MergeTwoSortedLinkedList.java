@@ -48,7 +48,8 @@ public class MergeTwoSortedLinkedList {
 //            System.out.println(returnlist.val);
 //            returnlist = returnlist.next;
 //        }
-        return returnlist.next;
+            System.out.println(mergeList.next.val + " flkasjfjd ");
+        return mergeList.next;
     }
 }
 
