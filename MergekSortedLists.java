@@ -4,17 +4,21 @@ public class MergekSortedLists {
         ListNode4 n1 = new ListNode4(1);
         n1.insertFirst(3).insertFirst(5);
 
-        ListNode4 n2 = new ListNode4(3);
-        n2.insertFirst(5).insertFirst(8);
+        ListNode4 n2 = new ListNode4(13);
+        n2.insertFirst(18).insertFirst(25);
 
         ListNode4 n3 = new ListNode4(2);
         n3.insertFirst(4).insertFirst(8);
 
-        ListNode4[] lists = new ListNode4[3];
+        ListNode4 n4 = new ListNode4(22);
+        n4.insertFirst(27).insertFirst(30);
+
+        ListNode4[] lists = new ListNode4[4];
 
         lists[0] = n1;
         lists[1] = n2;
         lists[2] = n3;
+        lists[3] = n4;
 
         mergeKLists(lists);
     }
