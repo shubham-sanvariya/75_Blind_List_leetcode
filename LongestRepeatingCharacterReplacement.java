@@ -3,7 +3,7 @@ public class LongestRepeatingCharacterReplacement {
         LongestRepeatingCharacterReplacement longestRepeatingCharacterReplacement =
                 new LongestRepeatingCharacterReplacement();
         String s = "AABABBA";
-        int k = 2;
+        int k = 1;
         longestRepeatingCharacterReplacement.characterReplacement(s,k);
     }
 
@@ -24,6 +24,7 @@ public class LongestRepeatingCharacterReplacement {
                 char_counts[s.charAt(window_start) - 'A']--;
                 window_start++;
             }
+            int st = window_end - window_start + 1;
             max_length = Math.max(max_length, window_end - window_start + 1);
         }
         System.out.println(max_length);
